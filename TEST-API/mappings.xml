@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<l7:Mappings xmlns:l7="http://ns.l7tech.com/2010/04/gateway-management">
+    <l7:Mapping action="NewOrExisting" srcId="0000000000000000ffffffffffffec76" srcUri="https://srh00135.ute.fedex.com:8443/restman/1.0/folders/0000000000000000ffffffffffffec76" type="FOLDER">
+        <l7:Properties>
+            <l7:Property key="FailOnNew">
+                <l7:BooleanValue>true</l7:BooleanValue>
+            </l7:Property>
+        </l7:Properties>
+    </l7:Mapping>
+    <l7:Mapping action="NewOrExisting" srcId="b52afd273b12a46dca261a1fcc8c4017" srcUri="https://srh00135.ute.fedex.com:8443/restman/1.0/folders/b52afd273b12a46dca261a1fcc8c4017" type="FOLDER"/>
+    <l7:Mapping action="NewOrExisting" srcId="b52afd273b12a46dca261a1fcc8c405f" srcUri="https://srh00135.ute.fedex.com:8443/restman/1.0/folders/b52afd273b12a46dca261a1fcc8c405f" type="FOLDER"/>
+    <l7:Mapping action="NewOrExisting" srcId="b52afd273b12a46dca261a1fcc8c40a9" srcUri="https://srh00135.ute.fedex.com:8443/restman/1.0/folders/b52afd273b12a46dca261a1fcc8c40a9" type="FOLDER"/>
+    <l7:Mapping action="NewOrExisting" srcId="1327a2dc17504e5f288d1f05b05b3484" srcUri="https://srh00135.ute.fedex.com:8443/restman/1.0/folders/1327a2dc17504e5f288d1f05b05b3484" type="FOLDER">
+        <l7:Properties>
+            <l7:Property key="FailOnNew">
+                <l7:BooleanValue>true</l7:BooleanValue>
+            </l7:Property>
+        </l7:Properties>
+    </l7:Mapping>
+    <l7:Mapping action="NewOrExisting" srcId="1327a2dc17504e5f288d1f05b05b3921" srcUri="https://srh00135.ute.fedex.com:8443/restman/1.0/policies/1327a2dc17504e5f288d1f05b05b3921" type="POLICY"/>
+    <l7:Mapping action="NewOrExisting" srcId="1327a2dc17504e5f288d1f05b05b39a7" srcUri="https://srh00135.ute.fedex.com:8443/restman/1.0/policies/1327a2dc17504e5f288d1f05b05b39a7" type="POLICY"/>
+    <l7:Mapping action="NewOrExisting" srcId="b7c40b909ba8de82ed2bd3906b5e8c59" srcUri="https://srh00135.ute.fedex.com:8443/restman/1.0/clusterProperties/b7c40b909ba8de82ed2bd3906b5e8c59" type="CLUSTER_PROPERTY">
+        <l7:Properties>
+            <l7:Property key="MapBy">
+                <l7:StringValue>name</l7:StringValue>
+            </l7:Property>
+        </l7:Properties>
+    </l7:Mapping>
+    <l7:Mapping action="NewOrExisting" srcId="b7c40b909ba8de82ed2bd3906b5e8c5f" srcUri="https://srh00135.ute.fedex.com:8443/restman/1.0/clusterProperties/b7c40b909ba8de82ed2bd3906b5e8c5f" type="CLUSTER_PROPERTY">
+        <l7:Properties>
+            <l7:Property key="MapBy">
+                <l7:StringValue>name</l7:StringValue>
+            </l7:Property>
+        </l7:Properties>
+    </l7:Mapping>
+    <l7:Mapping action="NewOrExisting" srcId="b7c40b909ba8de82ed2bd3906b5e8c64" srcUri="https://srh00135.ute.fedex.com:8443/restman/1.0/clusterProperties/b7c40b909ba8de82ed2bd3906b5e8c64" type="CLUSTER_PROPERTY">
+        <l7:Properties>
+            <l7:Property key="MapBy">
+                <l7:StringValue>name</l7:StringValue>
+            </l7:Property>
+        </l7:Properties>
+    </l7:Mapping>
+    <l7:Mapping action="NewOrExisting" srcId="b7c40b909ba8de82ed2bd3906b5e8c6a" srcUri="https://srh00135.ute.fedex.com:8443/restman/1.0/clusterProperties/b7c40b909ba8de82ed2bd3906b5e8c6a" type="CLUSTER_PROPERTY">
+        <l7:Properties>
+            <l7:Property key="MapBy">
+                <l7:StringValue>name</l7:StringValue>
+            </l7:Property>
+        </l7:Properties>
+    </l7:Mapping>
+    <l7:Mapping action="NewOrExisting" srcId="b7c40b909ba8de82ed2bd3906b5e8c7e" srcUri="https://srh00135.ute.fedex.com:8443/restman/1.0/clusterProperties/b7c40b909ba8de82ed2bd3906b5e8c7e" type="CLUSTER_PROPERTY">
+        <l7:Properties>
+            <l7:Property key="MapBy">
+                <l7:StringValue>name</l7:StringValue>
+            </l7:Property>
+        </l7:Properties>
+    </l7:Mapping>
+    <l7:Mapping action="NewOrExisting" srcId="feb722940383f1cc9af78a31abc4ec28" srcUri="https://srh00135.ute.fedex.com:8443/restman/1.0/policies/feb722940383f1cc9af78a31abc4ec28" type="POLICY"/>
+    <l7:Mapping action="NewOrExisting" srcId="1327a2dc17504e5f288d1f05b05b38a4" srcUri="https://srh00135.ute.fedex.com:8443/restman/1.0/policies/1327a2dc17504e5f288d1f05b05b38a4" type="POLICY"/>
+    <l7:Mapping action="NewOrExisting" srcId="5e416448b8d11ce6f17e8947c805875a" srcUri="https://srh00135.ute.fedex.com:8443/restman/1.0/policies/5e416448b8d11ce6f17e8947c805875a" type="POLICY"/>
+    <l7:Mapping action="NewOrExisting" srcId="2ca71162ba8d3c5f6d121b03a275daf3" srcUri="https://srh00135.ute.fedex.com:8443/restman/1.0/policies/2ca71162ba8d3c5f6d121b03a275daf3" type="POLICY"/>
+    <l7:Mapping action="NewOrExisting" srcId="b7c40b909ba8de82ed2bd3906b5e99dc" srcUri="https://srh00135.ute.fedex.com:8443/restman/1.0/clusterProperties/b7c40b909ba8de82ed2bd3906b5e99dc" type="CLUSTER_PROPERTY">
+        <l7:Properties>
+            <l7:Property key="MapBy">
+                <l7:StringValue>name</l7:StringValue>
+            </l7:Property>
+        </l7:Properties>
+    </l7:Mapping>
+    <l7:Mapping action="NewOrExisting" srcId="0000000000000000fffffffffff5519f" srcUri="https://srh00135.ute.fedex.com:8443/restman/1.0/clusterProperties/0000000000000000fffffffffff5519f" type="CLUSTER_PROPERTY">
+        <l7:Properties>
+            <l7:Property key="MapBy">
+                <l7:StringValue>name</l7:StringValue>
+            </l7:Property>
+        </l7:Properties>
+    </l7:Mapping>
+    <l7:Mapping action="NewOrExisting" srcId="00000000000000000000000000000002:hrtapi-fxf-rel-ssl" srcUri="https://srh00135.ute.fedex.com:8443/restman/1.0/privateKeys/00000000000000000000000000000002:hrtapi-fxf-rel-ssl" type="SSG_KEY_ENTRY"/>
+    <l7:Mapping action="NewOrExisting" srcId="dcdb783240189bcf649d49bae911b389" srcUri="https://srh00135.ute.fedex.com:8443/restman/1.0/policies/dcdb783240189bcf649d49bae911b389" type="POLICY"/>
+    <l7:Mapping action="NewOrExisting" srcId="5e416448b8d11ce6f17e8947c7d63236" srcUri="https://srh00135.ute.fedex.com:8443/restman/1.0/folders/5e416448b8d11ce6f17e8947c7d63236" type="FOLDER">
+        <l7:Properties>
+            <l7:Property key="FailOnNew">
+                <l7:BooleanValue>true</l7:BooleanValue>
+            </l7:Property>
+        </l7:Properties>
+    </l7:Mapping>
+    <l7:Mapping action="NewOrExisting" srcId="5e416448b8d11ce6f17e8947c7d882ad" srcUri="https://srh00135.ute.fedex.com:8443/restman/1.0/policies/5e416448b8d11ce6f17e8947c7d882ad" type="POLICY"/>
+    <l7:Mapping action="NewOrExisting" srcId="dcdb783240189bcf649d49bae92d2017" srcUri="https://srh00135.ute.fedex.com:8443/restman/1.0/policies/dcdb783240189bcf649d49bae92d2017" type="POLICY"/>
+    <l7:Mapping action="NewOrExisting" srcId="2a01ab1166340d1b41f837e61e867ccf" srcUri="https://srh00135.ute.fedex.com:8443/restman/1.0/folders/2a01ab1166340d1b41f837e61e867ccf" type="FOLDER">
+        <l7:Properties>
+            <l7:Property key="FailOnNew">
+                <l7:BooleanValue>true</l7:BooleanValue>
+            </l7:Property>
+        </l7:Properties>
+    </l7:Mapping>
+    <l7:Mapping action="NewOrExisting" srcId="2a01ab1166340d1b41f837e61e867ea4" srcUri="https://srh00135.ute.fedex.com:8443/restman/1.0/policies/2a01ab1166340d1b41f837e61e867ea4" type="POLICY"/>
+    <l7:Mapping action="NewOrExisting" srcId="2a01ab1166340d1b41f837e61e867f30" srcUri="https://srh00135.ute.fedex.com:8443/restman/1.0/encapsulatedAssertions/2a01ab1166340d1b41f837e61e867f30" type="ENCAPSULATED_ASSERTION"/>
+    <l7:Mapping action="NewOrExisting" srcId="2a01ab1166340d1b41f837e61e867d17" srcUri="https://srh00135.ute.fedex.com:8443/restman/1.0/folders/2a01ab1166340d1b41f837e61e867d17" type="FOLDER">
+        <l7:Properties>
+            <l7:Property key="FailOnNew">
+                <l7:BooleanValue>true</l7:BooleanValue>
+            </l7:Property>
+        </l7:Properties>
+    </l7:Mapping>
+    <l7:Mapping action="NewOrExisting" srcId="2a01ab1166340d1b41f837e61e867ec9" srcUri="https://srh00135.ute.fedex.com:8443/restman/1.0/policies/2a01ab1166340d1b41f837e61e867ec9" type="POLICY"/>
+    <l7:Mapping action="NewOrExisting" srcId="1327a2dc17504e5f288d1f05b05b39ed" srcUri="https://srh00135.ute.fedex.com:8443/restman/1.0/policies/1327a2dc17504e5f288d1f05b05b39ed" type="POLICY"/>
+    <l7:Mapping action="NewOrExisting" srcId="338840e77c1f788cf06b197ad8251234" srcUri="https://srh00135.ute.fedex.com:8443/restman/1.0/services/338840e77c1f788cf06b197ad8251234" type="SERVICE"/>
+    <l7:Mapping action="NewOrExisting" srcId="5e416448b8d11ce6f17e8947c7d91234" srcUri="https://srh00135.ute.fedex.com:8443/restman/1.0/services/5e416448b8d11ce6f17e8947c7d91234" type="SERVICE"/>
+    <l7:Mapping action="NewOrExisting" srcId="5e416448b8d11ce6f17e8947c7dc1234" srcUri="https://srh00135.ute.fedex.com:8443/restman/1.0/services/5e416448b8d11ce6f17e8947c7dc1234" type="SERVICE"/>
+</l7:Mappings>
