@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<l7:Mappings xmlns:l7="http://ns.l7tech.com/2010/04/gateway-management">
+    <l7:Mapping action="NewOrExisting" srcId="0000000000000000ffffffffffffec76" srcUri="https://srh00135.ute.fedex.com:8443/restman/1.0/folders/0000000000000000ffffffffffffec76" type="FOLDER">
+        <l7:Properties>
+            <l7:Property key="FailOnNew">
+                <l7:BooleanValue>true</l7:BooleanValue>
+            </l7:Property>
+        </l7:Properties>
+    </l7:Mapping>
+    <l7:Mapping action="NewOrExisting" srcId="439ab9c97a91fa44433c6cec4f8fa219" srcUri="https://srh00135.ute.fedex.com:8443/restman/1.0/folders/439ab9c97a91fa44433c6cec4f8fa219" type="FOLDER"/>
+    <l7:Mapping action="NewOrExisting" srcId="00000000000000000000000000000002:hrtapi-fxf-rel-ssl" srcUri="https://srh00135.ute.fedex.com:8443/restman/1.0/privateKeys/00000000000000000000000000000002:hrtapi-fxf-rel-ssl" type="SSG_KEY_ENTRY"/>
+    <l7:Mapping action="NewOrExisting" srcId="439ab9c97a91fa44433c6cec4f8f97b3" srcUri="https://srh00135.ute.fedex.com:8443/restman/1.0/policies/439ab9c97a91fa44433c6cec4f8f97b3" type="POLICY"/>
+    <l7:Mapping action="NewOrExisting" srcId="439ab9c97a91fa44433c6cec4f8f9902" srcUri="https://srh00135.ute.fedex.com:8443/restman/1.0/encapsulatedAssertions/439ab9c97a91fa44433c6cec4f8f9902" type="ENCAPSULATED_ASSERTION"/>
+    <l7:Mapping action="NewOrExisting" srcId="439ab9c97a91fa44433c6cec4f8f9b79" srcUri="https://srh00135.ute.fedex.com:8443/restman/1.0/policies/439ab9c97a91fa44433c6cec4f8f9b79" type="POLICY"/>
+    <l7:Mapping action="NewOrExisting" srcId="439ab9c97a91fa44433c6cec4f8f9b9e" srcUri="https://srh00135.ute.fedex.com:8443/restman/1.0/services/439ab9c97a91fa44433c6cec4f8f9b9e" type="SERVICE"/>
+    <l7:Mapping action="NewOrExisting" srcId="439ab9c97a91fa44433c6cec4f8fa1bb" srcUri="https://srh00135.ute.fedex.com:8443/restman/1.0/services/439ab9c97a91fa44433c6cec4f8fa1bb" type="SERVICE"/>
+</l7:Mappings>
