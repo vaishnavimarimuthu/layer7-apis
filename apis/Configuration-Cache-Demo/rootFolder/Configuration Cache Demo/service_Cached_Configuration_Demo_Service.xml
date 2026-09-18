@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<l7:Service xmlns:l7="http://ns.l7tech.com/2010/04/gateway-management" id="439ab9c97a91fa44433c6cec4f8fa1bb" version="2">
+    <l7:ServiceDetail folderId="439ab9c97a91fa44433c6cec4f8fa219" id="439ab9c97a91fa44433c6cec4f8fa1bb" version="2">
+        <l7:Name>Cached Configuration Demo Service</l7:Name>
+        <l7:Enabled>true</l7:Enabled>
+        <l7:ServiceMappings>
+            <l7:HttpMapping>
+                <l7:UrlPattern>/ConfigurationCacheDemo/*</l7:UrlPattern>
+                <l7:Verbs>
+                    <l7:Verb>GET</l7:Verb>
+                    <l7:Verb>POST</l7:Verb>
+                    <l7:Verb>PUT</l7:Verb>
+                    <l7:Verb>DELETE</l7:Verb>
+                </l7:Verbs>
+            </l7:HttpMapping>
+        </l7:ServiceMappings>
+        <l7:Properties>
+            <l7:Property key="hasRouting">
+                <l7:BooleanValue>true</l7:BooleanValue>
+            </l7:Property>
+            <l7:Property key="internal">
+                <l7:BooleanValue>false</l7:BooleanValue>
+            </l7:Property>
+            <l7:Property key="policyRevision">
+                <l7:LongValue>1</l7:LongValue>
+            </l7:Property>
+            <l7:Property key="soap">
+                <l7:BooleanValue>false</l7:BooleanValue>
+            </l7:Property>
+            <l7:Property key="tracingEnabled">
+                <l7:BooleanValue>false</l7:BooleanValue>
+            </l7:Property>
+            <l7:Property key="wssProcessingEnabled">
+                <l7:BooleanValue>false</l7:BooleanValue>
+            </l7:Property>
+        </l7:Properties>
+    </l7:ServiceDetail>
+    <l7:Resources>
+        <l7:ResourceSet tag="policy">
+            <l7:Resource type="policy" version="0">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;wsp:Policy xmlns:L7p="http://www.layer7tech.com/ws/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2002/12/policy"&gt;
+    &lt;wsp:All wsp:Usage="Required"&gt;
+        &lt;L7p:CommentAssertion&gt;
+            &lt;L7p:Comment stringValue="**************************************************************************************************************"/&gt;
+        &lt;/L7p:CommentAssertion&gt;
+        &lt;L7p:CommentAssertion&gt;
+            &lt;L7p:Comment stringValue="* Policy to illustrate cached configuration from service"/&gt;
+        &lt;/L7p:CommentAssertion&gt;
+        &lt;L7p:CommentAssertion&gt;
+            &lt;L7p:Comment stringValue="**************************************************************************************************************"/&gt;
+        &lt;/L7p:CommentAssertion&gt;
+        &lt;L7p:SetVariable&gt;
+            &lt;L7p:Base64Expression stringValue="cGFyYW1ldGVy"/&gt;
+            &lt;L7p:VariableToSet stringValue="configKey"/&gt;
+        &lt;/L7p:SetVariable&gt;
+        &lt;L7p:SetVariable&gt;
+            &lt;L7p:Base64Expression stringValue="JHtyZXF1ZXN0LnVybC5wYXRofQ=="/&gt;
+            &lt;L7p:VariableToSet stringValue="path"/&gt;
+        &lt;/L7p:SetVariable&gt;
+        &lt;wsp:OneOrMore wsp:Usage="Required"&gt;
+            &lt;L7p:CacheLookup&gt;
+                &lt;L7p:CacheEntryKey stringValue="${configKey}-url"/&gt;
+                &lt;L7p:CacheId stringValue="configCache-${path}"/&gt;
+                &lt;L7p:ContentTypeOverride stringValue=""/&gt;
+                &lt;L7p:OtherTargetMessageVariable stringValue="url"/&gt;
+                &lt;L7p:Target target="OTHER"/&gt;
+            &lt;/L7p:CacheLookup&gt;
+            &lt;wsp:All wsp:Usage="Required"&gt;
+                &lt;L7p:CustomizeErrorResponse&gt;
+                    &lt;L7p:Content stringValue="Not Found"/&gt;
+                    &lt;L7p:ExtraHeaders nameValuePairArray="included"/&gt;
+                    &lt;L7p:HttpStatus stringValue="404"/&gt;
+                &lt;/L7p:CustomizeErrorResponse&gt;
+                &lt;L7p:FalseAssertion/&gt;
+                &lt;L7p:assertionComment&gt;
+                    &lt;L7p:Properties mapValue="included"&gt;
+                        &lt;L7p:entry&gt;
+                            &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
+                            &lt;L7p:value stringValue="// Fail 404"/&gt;
+                        &lt;/L7p:entry&gt;
+                    &lt;/L7p:Properties&gt;
+                &lt;/L7p:assertionComment&gt;
+            &lt;/wsp:All&gt;
+            &lt;L7p:assertionComment&gt;
+                &lt;L7p:Properties mapValue="included"&gt;
+                    &lt;L7p:entry&gt;
+                        &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
+                        &lt;L7p:value stringValue="// Look up URL for this path, fail 404 if not found"/&gt;
+                    &lt;/L7p:entry&gt;
+                &lt;/L7p:Properties&gt;
+            &lt;/L7p:assertionComment&gt;
+        &lt;/wsp:OneOrMore&gt;
+        &lt;L7p:SetVariable&gt;
+            &lt;L7p:Base64Expression stringValue="JHt1cmwubWFpbnBhcnR9"/&gt;
+            &lt;L7p:VariableToSet stringValue="url"/&gt;
+        &lt;/L7p:SetVariable&gt;
+        &lt;L7p:CacheLookup&gt;
+            &lt;L7p:CacheEntryKey stringValue="${configKey}-readTimeout"/&gt;
+            &lt;L7p:CacheId stringValue="configCache-${path}"/&gt;
+            &lt;L7p:ContentTypeOverride stringValue=""/&gt;
+            &lt;L7p:OtherTargetMessageVariable stringValue="readTimeout"/&gt;
+            &lt;L7p:Target target="OTHER"/&gt;
+        &lt;/L7p:CacheLookup&gt;
+        &lt;L7p:SetVariable&gt;
+            &lt;L7p:Base64Expression stringValue="JHtyZWFkVGltZW91dC5tYWlucGFydH0="/&gt;
+            &lt;L7p:VariableToSet stringValue="readTimeout"/&gt;
+        &lt;/L7p:SetVariable&gt;
+        &lt;L7p:CacheLookup&gt;
+            &lt;L7p:CacheEntryKey stringValue="${configKey}-connectTimeout"/&gt;
+            &lt;L7p:CacheId stringValue="configCache-${path}"/&gt;
+            &lt;L7p:ContentTypeOverride stringValue=""/&gt;
+            &lt;L7p:OtherTargetMessageVariable stringValue="connectTimeout"/&gt;
+            &lt;L7p:Target target="OTHER"/&gt;
+        &lt;/L7p:CacheLookup&gt;
+        &lt;L7p:SetVariable&gt;
+            &lt;L7p:Base64Expression stringValue="JHtjb25uZWN0VGltZW91dC5tYWlucGFydH0="/&gt;
+            &lt;L7p:VariableToSet stringValue="connectTimeout"/&gt;
+        &lt;/L7p:SetVariable&gt;
+        &lt;L7p:HardcodedResponse&gt;
+            &lt;L7p:Base64ResponseBody stringValue="Q29uZmlndXJhdGlvbiBmb3IgJHtwYXRofToKICAtIHVybCA9ICR7dXJsfQogIC0gcmVhZFRpbWVvdXQgPSAke3JlYWRUaW1lb3V0fQogIC0gY29ubmVjdFRpbWVvdXQgPSAke2Nvbm5lY3RUaW1lb3V0fQ=="/&gt;
+            &lt;L7p:ResponseContentType stringValue="text/plain; charset=UTF-8"/&gt;
+        &lt;/L7p:HardcodedResponse&gt;
+    &lt;/wsp:All&gt;
+&lt;/wsp:Policy&gt;
+</l7:Resource>
+        </l7:ResourceSet>
+    </l7:Resources>
+</l7:Service>
