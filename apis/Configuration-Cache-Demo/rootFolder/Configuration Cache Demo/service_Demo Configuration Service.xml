@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<l7:Service xmlns:l7="http://ns.l7tech.com/2010/04/gateway-management" id="439ab9c97a91fa44433c6cec4f8f9b9e" version="2">
+    <l7:ServiceDetail folderId="439ab9c97a91fa44433c6cec4f8fa219" id="439ab9c97a91fa44433c6cec4f8f9b9e" version="2">
+        <l7:Name>Demo Configuration Service</l7:Name>
+        <l7:Enabled>true</l7:Enabled>
+        <l7:ServiceMappings>
+            <l7:HttpMapping>
+                <l7:UrlPattern>/ConfigurationCacheDemo/configuration</l7:UrlPattern>
+                <l7:Verbs>
+                    <l7:Verb>GET</l7:Verb>
+                    <l7:Verb>POST</l7:Verb>
+                    <l7:Verb>PUT</l7:Verb>
+                    <l7:Verb>DELETE</l7:Verb>
+                </l7:Verbs>
+            </l7:HttpMapping>
+        </l7:ServiceMappings>
+        <l7:Properties>
+            <l7:Property key="hasRouting">
+                <l7:BooleanValue>true</l7:BooleanValue>
+            </l7:Property>
+            <l7:Property key="internal">
+                <l7:BooleanValue>false</l7:BooleanValue>
+            </l7:Property>
+            <l7:Property key="policyRevision">
+                <l7:LongValue>1</l7:LongValue>
+            </l7:Property>
+            <l7:Property key="soap">
+                <l7:BooleanValue>false</l7:BooleanValue>
+            </l7:Property>
+            <l7:Property key="tracingEnabled">
+                <l7:BooleanValue>false</l7:BooleanValue>
+            </l7:Property>
+            <l7:Property key="wssProcessingEnabled">
+                <l7:BooleanValue>false</l7:BooleanValue>
+            </l7:Property>
+        </l7:Properties>
+    </l7:ServiceDetail>
+    <l7:Resources>
+        <l7:ResourceSet tag="policy">
+            <l7:Resource type="policy" version="0">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;wsp:Policy xmlns:L7p="http://www.layer7tech.com/ws/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2002/12/policy"&gt;
+    &lt;wsp:All wsp:Usage="Required"&gt;
+        &lt;L7p:CommentAssertion&gt;
+            &lt;L7p:Comment stringValue="***************************************************************************************"/&gt;
+        &lt;/L7p:CommentAssertion&gt;
+        &lt;L7p:CommentAssertion&gt;
+            &lt;L7p:Comment stringValue="* Demo service to present configuration values"/&gt;
+        &lt;/L7p:CommentAssertion&gt;
+        &lt;L7p:CommentAssertion&gt;
+            &lt;L7p:Comment stringValue="***************************************************************************************"/&gt;
+        &lt;/L7p:CommentAssertion&gt;
+        &lt;L7p:HardcodedResponse&gt;
+            &lt;L7p:AssertionComment assertionComment="included"&gt;
+                &lt;L7p:Properties mapValue="included"&gt;
+                    &lt;L7p:entry&gt;
+                        &lt;L7p:key stringValue="RIGHT.COMMENT"/&gt;
+                        &lt;L7p:value stringValue="// 200 text/xml"/&gt;
+                    &lt;/L7p:entry&gt;
+                &lt;/L7p:Properties&gt;
+            &lt;/L7p:AssertionComment&gt;
+            &lt;L7p:Base64ResponseBody stringValue="PGNvbmZpZ3VyYXRpb24+CiAgPHNlcnZpY2UgcGF0aD0iL0NvbmZpZ3VyYXRpb25DYWNoZURlbW8vdGVzdCI+CiAgICA8cGFyYW1ldGVyIG5hbWU9InVybCI+aHR0cDovL3d3dy5mb28xMjMuY29tL3Rlc3Q8L3BhcmFtZXRlcj4KICAgIDxwYXJhbWV0ZXIgbmFtZT0iY29ubmVjdFRpbWVvdXQiPjM1MDA8L3BhcmFtZXRlcj4KICAgIDxwYXJhbWV0ZXIgbmFtZT0icmVhZFRpbWVvdXQiPjEwMDAwPC9wYXJhbWV0ZXI+CiAgPC9zZXJ2aWNlPgogIDxzZXJ2aWNlIHBhdGg9Ii9Db25maWd1cmF0aW9uQ2FjaGVEZW1vL2F1dGgiPgogICAgPHBhcmFtZXRlciBuYW1lPSJ1cmwiPmh0dHA6Ly93d3cuZm9vMTIzLmNvbS9hdXRoPC9wYXJhbWV0ZXI+CiAgICA8cGFyYW1ldGVyIG5hbWU9ImNvbm5lY3RUaW1lb3V0Ij4yNTAwPC9wYXJhbWV0ZXI+CiAgICA8cGFyYW1ldGVyIG5hbWU9InJlYWRUaW1lb3V0Ij4zMDAwMDwvcGFyYW1ldGVyPgogIDwvc2VydmljZT4KPC9jb25maWd1cmF0aW9uPg=="/&gt;
+        &lt;/L7p:HardcodedResponse&gt;
+    &lt;/wsp:All&gt;
+&lt;/wsp:Policy&gt;
+</l7:Resource>
+        </l7:ResourceSet>
+    </l7:Resources>
+</l7:Service>
