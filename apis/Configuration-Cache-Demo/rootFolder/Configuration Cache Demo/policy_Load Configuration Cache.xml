@@ -27,13 +27,13 @@
 &lt;wsp:Policy xmlns:L7p="http://www.layer7tech.com/ws/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2002/12/policy"&gt;
     &lt;wsp:All wsp:Usage="Required"&gt;
         &lt;L7p:CommentAssertion&gt;
-            &lt;L7p:Comment stringValue="***************************************************************************************"/&gt;
+            &lt;L7p:Comment stringValue="****************Starting of Schedules task*****************************************************************"/&gt;
         &lt;/L7p:CommentAssertion&gt;
         &lt;L7p:CommentAssertion&gt;
             &lt;L7p:Comment stringValue="* Scheduled task to load values from configuration service into cache"/&gt;
         &lt;/L7p:CommentAssertion&gt;
         &lt;L7p:CommentAssertion&gt;
-            &lt;L7p:Comment stringValue="***************************************************************************************"/&gt;
+            &lt;L7p:Comment stringValue="***********Ending of Scheduled task************************************************************************"/&gt;
         &lt;/L7p:CommentAssertion&gt;
         &lt;L7p:Encapsulated&gt;
             &lt;L7p:AssertionComment assertionComment="included"&gt;
