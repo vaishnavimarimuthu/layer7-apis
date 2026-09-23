@@ -167,6 +167,7 @@ pipeline {
                                         --bundle "${currentBundlePath}" ^
                                         --plaintextEncryptionPassphrase "%GATEWAY_PASSWORD%" ^
                                         --results "results-${app}.xml" ^
+                                        --action NewOrUpdate ^
                                         --trustCertificate ^
                                         --trustHostname ^
                                         --test
@@ -205,6 +206,7 @@ pipeline {
                                             --bundle "${currentBundlePath}" ^
                                             --plaintextEncryptionPassphrase "%GATEWAY_PASSWORD%" ^
                                             --results "gmu-results-${app}.xml" ^
+                                            --action NewOrUpdate ^
                                             --trustCertificate ^
                                             --trustHostname
                                     """
