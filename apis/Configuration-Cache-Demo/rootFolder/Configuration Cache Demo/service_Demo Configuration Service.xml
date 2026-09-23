@@ -44,7 +44,7 @@
             &lt;L7p:Comment stringValue="***************************************************************************************"/&gt;
         &lt;/L7p:CommentAssertion&gt;
         &lt;L7p:CommentAssertion&gt;
-            &lt;L7p:Comment stringValue="* Demo service to present configuration values"/&gt;
+            &lt;L7p:Comment stringValue="* Demo service to present configuration values with newly updated text"/&gt;
         &lt;/L7p:CommentAssertion&gt;
         &lt;L7p:CommentAssertion&gt;
             &lt;L7p:Comment stringValue="***************************************************************************************"/&gt;
