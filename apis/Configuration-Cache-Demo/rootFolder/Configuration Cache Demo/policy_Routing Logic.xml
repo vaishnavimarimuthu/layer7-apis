@@ -21,7 +21,7 @@
 &lt;wsp:Policy xmlns:L7p="http://www.layer7tech.com/ws/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2002/12/policy"&gt;
     &lt;wsp:All wsp:Usage="Required"&gt;
         &lt;L7p:CommentAssertion&gt;
-            &lt;L7p:Comment stringValue="**************************************************************************************************************"/&gt;
+            &lt;L7p:Comment stringValue="***********Newly updated comment*************************************************************************************"/&gt;
         &lt;/L7p:CommentAssertion&gt;
         &lt;L7p:CommentAssertion&gt;
             &lt;L7p:Comment stringValue="* Policy fragment for &amp;quot;Routing Logic&amp;quot; encapsulated assertion"/&gt;
