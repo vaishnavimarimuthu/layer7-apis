@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<l7:ClusterProperty xmlns:l7="http://ns.l7tech.com/2010/04/gateway-management" id="0c3729ca9f24cb4f2f55d363c7f7c4e3" version="0">
+    <l7:Name>otk.id_token.signing_algorithm</l7:Name>
+    <l7:Value>HS256</l7:Value>
+</l7:ClusterProperty>

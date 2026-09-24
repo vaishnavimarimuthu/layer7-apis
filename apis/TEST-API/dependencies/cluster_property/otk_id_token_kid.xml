@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<l7:ClusterProperty xmlns:l7="http://ns.l7tech.com/2010/04/gateway-management" id="7d26b3199c8af6547c045e438ce87b28" version="0">
+    <l7:Name>otk.id_token.kid</l7:Name>
+    <l7:Value>default_ssl_key</l7:Value>
+</l7:ClusterProperty>
