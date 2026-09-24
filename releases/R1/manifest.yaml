@@ -3,5 +3,4 @@
 release: R1
 description: "Release 1 — First wave set of APIs"
 services:
-  - TEST-API
   - Configuration-Cache-Demo
