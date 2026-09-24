@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<l7:ClusterProperty xmlns:l7="http://ns.l7tech.com/2010/04/gateway-management" id="b7c40b909ba8de82ed2bd3906b5e8c6a" version="0">
-    <l7:Name>hrt.ds.maxvalue</l7:Name>
-    <l7:Value>500</l7:Value>
-</l7:ClusterProperty>
